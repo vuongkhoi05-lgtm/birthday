@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎂</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="login-screen">
+        <div class="login-box">
+            <h2>Quét QR Hoặc Nhập Mã Để Mở Quà!🎁</h2>
+            <div class="qr-placeholder">
+                <img id="qr-image" src="" alt="QR Code">
+            </div>
+            <input type="text" id="passcode" placeholder="Nhập mã bí mật tại đây...">
+            <button onclick="checkPasscode()">Mở Khóa</button>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div class="birthday-text">
+            <h1>HAPPY BIRTHDAY! 🎉</h1>
+            <p>Nhấp vào bao thư bên dưới để nhận điều bất ngờ nhé!</p>
+        </div>
+
+        <div class="envelope-wrapper" onclick="toggleEnvelope(this)">
+            <div class="envelope">
+                <div class="letter">
+                    <h3>Thư gửi Cậu 💌</h3>
+                    <p>Chào cậu,</p>
+                    <p>Hôm nay là một ngày vô cùng đặc biệt. Chúc cậu tuổi mới luôn rực rỡ như những đóa hoa, ngập tràn tiếng cười và đạt được mọi điều mình mong ước.</p>
+                    <p>Cảm ơn cậu vì đã xuất hiện và mang lại những năng lượng thật tích cực. Hy vọng món quà nhỏ tự tay tớ code này sẽ làm cậu mỉm cười hôm nay!</p>
+                    <p style="text-align: right; font-style: italic; margin-top: 15px;">Thương mến, <br>Tớ nè</p>
+                </div>
+            </div>
+            <div class="tap-instruction">✉️ Chạm vào thư để mở / đóng</div>
+        </div>
+
+        <canvas id="fireworksCanvas"></canvas>
+    </div>
+
+    <audio id="bg-music" src="assets/music.mp3" loop></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
