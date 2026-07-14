@@ -1,4 +1,4 @@
-const SECRET_CODE = "1-9-2026"; // Thay đổi mã bí mật mở khóa tại đây
+const SECRET_CODE = "192026"; // Thay đổi mã bí mật mở khóa tại đây
 
 // Tự động kiểm tra tham số đường dẫn để mở khóa nhanh khi quét QR
 window.onload = function() {
